@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3442312544525301101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7353216459575598752}
+  m_Layer: 6
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7353216459575598752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442312544525301101}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8006903875346476615}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5008194942165039863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8006903875346476615}
+  - component: {fileID: 4150037422216670396}
+  m_Layer: 6
+  m_Name: SoundBlaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8006903875346476615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008194942165039863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7607818427380077668}
+  - {fileID: 7353216459575598752}
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4150037422216670396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008194942165039863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ecc710a33649b4698dcff6906eb8d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: SoundBlaster
+  abilityLength: 3
+  onAbilityActive:
+    m_PersistentCalls:
+      m_Calls: []
+  onAbilityDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  roarDetector: {fileID: 0}
+  roarDisplay: {fileID: 2557334397086878130}
+  firePoint: {fileID: 7353216459575598752}
+  soundBlastPrefab: {fileID: 5829717472190629235, guid: fde78ac24aa72704b939c37b4faab37d, type: 3}
+  timeSpacing: 0.1
+  voiceRingScalar: 200
+--- !u!1001 &8626904179859708584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8006903875346476615}
+    m_Modifications:
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.173
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7048597291119410640, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+      propertyPath: m_Name
+      value: RoarDisplay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+--- !u!114 &2557334397086878130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6108448660496749338, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+  m_PrefabInstance: {fileID: 8626904179859708584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f96c9ab3fed4ed4a811b7dbd8f9b9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &7607818427380077668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2174267930843795148, guid: e91f651a338013b4f9c89bd165868ad1, type: 3}
+  m_PrefabInstance: {fileID: 8626904179859708584}
+  m_PrefabAsset: {fileID: 0}
